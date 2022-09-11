@@ -11,11 +11,9 @@ public class TestUnits
 								   "\nSize : "+ NewOfficePark.size + " sqm,"+
 								   "\nIs multistorey : " + NewOfficePark.multiStorey +
 								   "\nNo. of windows : "+ NewOfficePark.nrWindows +
-								   "\n");// continue getting the rest of the details, not sure if they wanted getters and setters for these, but they weren't detailed
-
+								   "\n");
 		System.out.println("NewShoppingMall object Details "+
 								   "\nSize : "+ NewShoppingMall.size +
-								   "\nIs Multi storey : "+ NewShoppingMall.multiStorey +"\n"); //again continue filling these in
-
+								   "\nIs Multi storey : "+ NewShoppingMall.multiStorey +"\n");
 	}
 }

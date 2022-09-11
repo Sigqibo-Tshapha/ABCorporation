@@ -34,7 +34,7 @@ public class CustomerEnum
 		System.out.println("Special Business interest : "+ specialBusiness.getSpecialInterest());
 		System.out.println();
 
-		//3.8 not sure if I understood the question well here
+		//3.8
 		CustomerType[] customerTypeArray = CustomerType.values();
 		System.out.println(Arrays.toString(customerTypeArray));
 		System.out.println();
