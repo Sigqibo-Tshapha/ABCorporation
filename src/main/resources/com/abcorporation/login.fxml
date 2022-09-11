@@ -63,7 +63,7 @@
          </font>
       </Button>
       <PasswordField id="passwordInput" fx:id="passwordInput" layoutX="170.0" layoutY="317.0" prefHeight="26.0" prefWidth="569.0" promptText="Password" />
-      <Label id="responseTxt" fx:id="responseTxt" layoutX="298.0" layoutY="380.0" >
+      <Label id="responseTxt" fx:id="responseTxt" layoutX="298.0" layoutY="380.0">
          <font>
             <Font size="18.0" />
          </font>

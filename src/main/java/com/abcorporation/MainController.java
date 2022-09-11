@@ -38,12 +38,12 @@ public class MainController
 		Stage newStage = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("newCustomer.fxml"));
 		Scene scene = new Scene(root);
-		stage.setTitle("Registration Page!");
-		stage.setScene(scene);
-		stage.show();
+		newStage.setTitle("Registration Page!");
+		newStage.setScene(scene);
+		newStage.show();
 
 	}
-	public void loginBtnClicked(ActionEvent e)
+	public void loginBtnClicked(ActionEvent e) throws IOException
 	{
 		responseTxt.setTextFill(Color.RED);
 		if(passwordInput.getText().isEmpty())
@@ -55,7 +55,16 @@ public class MainController
 			responseTxt.setText("Invalid userId!");
 		}
 		else
-			responseTxt.setText("login successful");
+		{
+			Stage stage = (Stage) exitBtn.getScene().getWindow();
+			stage.close();
+			Stage newStage = new Stage();
+			Parent root = FXMLLoader.load(getClass().getResource("viewOrders.fxml"));
+			Scene scene = new Scene(root);
+			newStage.setTitle("Login Page!");
+			newStage.setScene(scene);
+			newStage.show();
+		}
 
 	}
 

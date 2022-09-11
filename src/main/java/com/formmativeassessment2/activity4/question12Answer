@@ -1,9 +1,0 @@
-The NumbersCompareTest class exercises the use of the equality(==) relational operator to check for equality among the 4 primitive integer objects,
-particularly comparing num1 to num2 and num3 to num4. It makes use of reference comparison, meaning that we look at whether the references being compared 'point' to the same object
-in our stack, as opposed to comparing their contents as you would with the equals() method. The output of the class is:
-false
-true
-
-
-//I'm not sure how deep you want us to dissect this question but we can go further by explaining the datatypes used and how the JVM REALLY does the comparison
-// and how the stack memory works but I don't think that's necessary

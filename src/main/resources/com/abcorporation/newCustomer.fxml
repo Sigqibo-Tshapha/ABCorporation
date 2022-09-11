@@ -42,9 +42,9 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField id="fName" layoutX="327.0" layoutY="124.0" prefHeight="25.0" prefWidth="416.0" />
-      <TextField id="telephoneNo" layoutX="333.0" layoutY="297.0" prefHeight="25.0" prefWidth="416.0" />
-      <TextField id="lName" layoutX="327.0" layoutY="179.0" prefHeight="25.0" prefWidth="416.0" />
+      <TextField id="fName" fx:id="fName" layoutX="327.0" layoutY="124.0" prefHeight="25.0" prefWidth="416.0" />
+      <TextField id="telephoneNo" fx:id="telephoneNo" layoutX="333.0" layoutY="297.0" prefHeight="25.0" prefWidth="416.0" />
+      <TextField id="lName" fx:id="lName" layoutX="327.0" layoutY="179.0" prefHeight="25.0" prefWidth="416.0" />
       <Label layoutX="94.0" layoutY="485.0" text="Password :">
          <font>
             <Font size="18.0" />
@@ -55,24 +55,29 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <PasswordField layoutX="330.0" layoutY="486.0" prefHeight="25.0" prefWidth="416.0" />
-      <PasswordField layoutX="327.0" layoutY="552.0" prefHeight="25.0" prefWidth="416.0" />
-      <ChoiceBox id="category" layoutX="330.0" layoutY="235.0" prefHeight="25.0" prefWidth="416.0" />
-      <TextArea layoutX="326.0" layoutY="347.0" prefHeight="105.0" prefWidth="416.0" />
-      <Button id="saveUserBtn" fx:id="saveUserBtn" layoutX="94.0" layoutY="628.0" mnemonicParsing="false" onAction="#saveUser" prefHeight="39.0" prefWidth="194.0" text="Register">
+      <PasswordField id="password1" fx:id="password1" layoutX="330.0" layoutY="486.0" prefHeight="25.0" prefWidth="416.0" />
+      <PasswordField id="password2" fx:id="password2" layoutX="327.0" layoutY="552.0" prefHeight="25.0" prefWidth="416.0" />
+      <ChoiceBox id="category" fx:id="category" layoutX="330.0" layoutY="235.0" prefHeight="25.0" prefWidth="416.0" />
+      <TextArea id="deliveryAddress" fx:id="deliveryAddress" layoutX="326.0" layoutY="347.0" prefHeight="105.0" prefWidth="416.0" />
+      <Button id="saveUserBtn" fx:id="saveUserBtn" layoutX="94.0" layoutY="628.0" mnemonicParsing="false" onAction="#saveUserBtnClicked" prefHeight="39.0" prefWidth="194.0" text="Register">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="580.0" layoutY="628.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="163.0" text="Exit">
+      <Button id="exitBtn" fx:id="exitBtn" layoutX="580.0" layoutY="628.0" mnemonicParsing="false" onAction="#exitBtnClicked" prefHeight="39.0" prefWidth="163.0" text="Exit">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button id="backToLoginBtn" fx:id="backToLoginBtn" layoutX="341.0" layoutY="628.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="194.0" text="Back To Login">
+      <Button id="backToLoginBtn" fx:id="backToLoginBtn" layoutX="341.0" layoutY="628.0" mnemonicParsing="false" onAction="#backToLoginBtnClicked" prefHeight="39.0" prefWidth="194.0" text="Back To Login">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
+      <Label id="responseLbl" fx:id="responseLbl" layoutX="319.0" layoutY="90.0" textFill="#d31b1b">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
